@@ -1,11 +1,14 @@
-function App() {
+import React from "react";
+import { Header, Hero, Review } from "./components";
+
+const App: React.FC = () => {
   return (
     <>
-      <div>
-        <h1>Hello World</h1>
-      </div>
+      <Header />
+      <Hero />
+      <Review />
     </>
   );
-}
+};
 
 export default App;

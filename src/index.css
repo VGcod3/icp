@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/src/assets/Unbounded-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 200 900;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+@layer base {
+  * {
+    color-scheme: dark;
+  }
+}
+
+.unbounded-500 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.unbounded-700 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer utilities {
+  .font-unbounded {
+    font-family: var(--font-unbounded);
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+}
