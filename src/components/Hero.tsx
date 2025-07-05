@@ -41,12 +41,12 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <img
-        src="/src/assets/pills.png"
+        src="/pills.png"
         alt="Pills decoration"
         className="absolute top-0 right-0 z-10 invisible xl:visible"
       />
       <img
-        src="/src/assets/icp-hero.png"
+        src="/icp-hero.png"
         alt="ICP Hero Background"
         className="w-full h-full object-cover opacity-70 absolute bottom-[25%] left-0 right-0 md:visible invisible z-0"
       />

@@ -43,7 +43,7 @@ const Footer = () => {
             className="transition-opacity hover:opacity-80 mx-auto md:mx-0 order-1"
           >
             <img
-              src="/src/assets/dora-hacks.svg"
+              src="/dora-hacks.svg"
               alt="DoraHacks Registration"
               className="md:w-52 w-44 h-16"
             />
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       <img
-        src="src/assets/footer.png"
+        src="/footer.png"
         alt="Footer"
         className="absolute bottom-0 left-0 w-full h-full object-cover z-0"
       />

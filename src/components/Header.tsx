@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="p-4">
         <div className="flex items-center justify-between self-center w-full max-w-6xl mx-auto">
           <img
-            src="/src/assets/icp-logo.svg"
+            src="/icp-logo.svg"
             alt="ICP Logo"
             className="md:w-44 w-36 h-5"
           />
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             className="transition-opacity hover:opacity-80"
           >
             <img
-              src="/src/assets/dora-hacks.svg"
+              src="/dora-hacks.svg"
               alt="DoraHacks Logo"
               className="md:w-44 w-36 h-12"
             />

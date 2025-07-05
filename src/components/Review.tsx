@@ -60,7 +60,7 @@ const Review: React.FC = () => {
             className="transition-opacity hover:opacity-80"
           >
             <img
-              src="/src/assets/dora-hacks.svg"
+              src="/dora-hacks.svg"
               alt="DoraHacks Registration"
               className="md:w-52 w-44 h-12"
             />
