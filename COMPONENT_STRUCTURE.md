@@ -13,13 +13,20 @@ src/
 │   ├── index.ts          # Component exports
 │   ├── Header.tsx        # Navigation header component
 │   ├── Hero.tsx          # Hero section component
-│   └── Review.tsx        # Event review section component
+│   ├── Review.tsx        # Event review section component
+│   └── Prize.tsx         # Prize fund section component
 ├── constants/            # Application constants
-│   └── index.ts          # Event data and URLs
+│   └── index.ts          # Event data, prize data, and URLs
 └── types/               # TypeScript type definitions
     └── index.ts         # Shared interfaces
 
 ```
+
+### Prize
+
+- Prize fund information with different competition rounds
+- Reusable PrizeCard component for each prize tier
+- Dynamic data rendering from constants
 
 ## Components
 

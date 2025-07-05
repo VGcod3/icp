@@ -9,3 +9,10 @@ export interface LinkInfo {
   target?: string;
   rel?: string;
 }
+
+export interface PrizeData {
+  amount: string;
+  title: string;
+  description: string;
+  height: string;
+}
