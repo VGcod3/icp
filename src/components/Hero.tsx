@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
           Хакни майбутнє —
         </p>
         <p className="md:text-xl lg:text-2xl montserrat-400 text-white right-[5%] top-34 lg:absolute max-w-lg">
-          створки свою спадщину на ICP
+          створи свою спадщину на ICP
         </p>
         <h4 className="md:text-xl lg:text-2xl unbounded-500 text-white text-center md:text-left mt-4">
           Ласкаво просимо
