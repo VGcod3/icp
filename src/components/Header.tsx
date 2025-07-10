@@ -1,5 +1,5 @@
 import React from "react";
-import { DORAHACKS_URL } from "../constants";
+import { RegisterButton } from "./index";
 
 const Header: React.FC = () => {
   return (
@@ -11,18 +11,8 @@ const Header: React.FC = () => {
             alt="ICP Logo"
             className="md:w-44 w-36 h-5"
           />
-          <a
-            href={DORAHACKS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-opacity hover:opacity-80"
-          >
-            <img
-              src="/dora-hacks.svg"
-              alt="DoraHacks Logo"
-              className="md:w-44 w-36 h-12"
-            />
-          </a>
+
+          <RegisterButton />
         </div>
       </div>
       <div className="w-full min-h-[2px] bg-linear-to-r from-[#FFFFFF60] to-[#5BC8FF60]" />

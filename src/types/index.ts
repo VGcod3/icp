@@ -16,3 +16,10 @@ export interface PrizeData {
   description: string;
   height: string;
 }
+
+export interface RegistrationFormData {
+  telegramNickname: string;
+  discordNickname: string;
+  fullName: string;
+  email: string;
+}

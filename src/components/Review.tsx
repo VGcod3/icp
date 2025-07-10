@@ -1,5 +1,6 @@
 import React from "react";
-import { EVENT_INFO, DORAHACKS_URL } from "../constants";
+import { EVENT_INFO } from "../constants";
+import RegisterButton from "./RegisterButton";
 
 interface InfoCardProps {
   label: string;
@@ -53,18 +54,7 @@ const Review: React.FC = () => {
 
         <div className="bg-blue-500 rounded-3xl min-h-30 w-full mt-3 p-7 flex flex-col md:flex-row items-center justify-between gap-5">
           <h5 className="unbounded-700 text-3xl lg:text-6xl">Реєстрація</h5>
-          <a
-            href={DORAHACKS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-opacity hover:opacity-80"
-          >
-            <img
-              src="/dora-hacks.svg"
-              alt="DoraHacks Registration"
-              className="md:w-52 w-44 h-12"
-            />
-          </a>
+          <RegisterButton />
         </div>
       </div>
     </div>

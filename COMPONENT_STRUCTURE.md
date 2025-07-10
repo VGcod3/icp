@@ -1,5 +1,19 @@
-# Component Structure
+# Component├── components/ # Reusable React components
 
+│ ├── index.ts # Component exports
+│ ├── Header.tsx # Navigation header component
+│ ├── Hero.tsx # Hero section component
+│ ├── Review.tsx # Event review section component
+│ ├── Prize.tsx # Prize fund section component
+│ ├── RegisterButton.tsx # Registration button component
+│ ├── RegistrationDialog.tsx # Registration modal dialog
+│ └── RegistrationForm.tsx # Registration form with validation
+├── constants/ # Application constants
+│ └── index.ts # Event data, prize data, registration URLs
+├── schemas/ # Zod validation schemas
+│ └── registration.ts # Registration form validation schema
+└── types/ # TypeScript type definitions
+└── index.ts # Shared interfaces
 This project has been refactored to follow React best practices with a clean component architecture.
 
 ## Project Structure
@@ -14,13 +28,35 @@ src/
 │   ├── Header.tsx        # Navigation header component
 │   ├── Hero.tsx          # Hero section component
 │   ├── Review.tsx        # Event review section component
-│   └── Prize.tsx         # Prize fund section component
+│   ├── Prize.tsx         # Prize fund section component
+│   └── RegisterButton.tsx # Registration button component
 ├── constants/            # Application constants
-│   └── index.ts          # Event data, prize data, and URLs
+│   └── index.ts          # Event data, prize data, registration URLs
 └── types/               # TypeScript type definitions
     └── index.ts         # Shared interfaces
 
 ```
+
+### RegistrationDialog
+
+- Radix UI powered modal dialog
+- Custom animations and backdrop blur
+- Accessible design with proper ARIA attributes
+- Responsive design for mobile and desktop
+
+### RegistrationForm
+
+- React Hook Form integration with Zod validation
+- Real-time form validation with error messages
+- Ukrainian language support for all fields
+- Styled form inputs with focus states
+
+### RegisterButton
+
+- Standalone registration button component
+- Uses centralized URL constants
+- Accessible design with proper aria-label
+- Consistent styling and hover effects
 
 ### Prize
 
@@ -56,6 +92,8 @@ src/
 - **Component Separation**: Each component in its own file for maintainability
 - **Constants**: Centralized data management
 - **Accessibility**: Proper alt text and semantic HTML
+- **Form Validation**: Zod schema validation with React Hook Form
+- **Modal Dialogs**: Radix UI components with custom animations
 
 ## Improvements Made
 

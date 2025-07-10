@@ -1,6 +1,5 @@
 import React from "react";
-import { Header, Hero, Review, Prize } from "./components";
-import { DORAHACKS_URL } from "./constants";
+import { Header, Hero, Review, Prize, RegisterButton } from "./components";
 
 const App: React.FC = () => {
   return (
@@ -36,18 +35,7 @@ const Footer = () => {
             Реєструйся вже зараз. Початок — 1 липня. Прокладай свій шлях в
             історію Web3
           </h5>
-          <a
-            href={DORAHACKS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-opacity hover:opacity-80 mx-auto md:mx-0 order-1"
-          >
-            <img
-              src="/dora-hacks.svg"
-              alt="DoraHacks Registration"
-              className="md:w-52 w-44 h-16"
-            />
-          </a>
+          <RegisterButton />
         </div>
       </div>
       <img
