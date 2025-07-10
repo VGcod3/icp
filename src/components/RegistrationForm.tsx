@@ -21,6 +21,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
     formState: { errors, isSubmitting },
   } = useForm<RegistrationFormData>({
     resolver: zodResolver(registrationSchema),
+
     // defaultValues: {
     //   telegramNickname: "@username",
     //   discordNickname: "username#1234",
