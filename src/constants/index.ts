@@ -31,6 +31,8 @@ export const EVENT_INFO: EventInfo[] = [
 export const DORAHACKS_URL =
   "https://dorahacks.io/hackathon/wchl25-qualification-round/detail";
 
+export const REGISTER_URL = "https://dorahacks.io/buidl/2025";
+
 export const PRIZE_DATA = [
   {
     amount: "$30,000",

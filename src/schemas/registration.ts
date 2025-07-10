@@ -3,17 +3,20 @@ import { z } from "zod";
 export const registrationSchema = z.object({
   telegramNickname: z
     .string()
-    .min(1, "ТГ нікнейм є обов'язковим")
-    .min(3, "ТГ нікнейм повинен містити принаймні 3 символи")
+    .min(1, "Telegram нікнейм є обов'язковим")
+    .min(3, "Telegram нікнейм повинен містити принаймні 3 символи")
+    .refine((check) => check.startsWith("@"), {
+      message: "Telegram нікнейм повинен починатися з '@'",
+    })
     .regex(
-      /^[a-zA-Z0-9_]+$/,
-      "ТГ нікнейм може містити лише літери, цифри та підкреслення"
+      /^@[a-zA-Z0-9_]+$/,
+      "Telegram нікнейм може містити лише літери, цифри та підкреслення"
     ),
 
   discordNickname: z
     .string()
-    .min(1, "Діскорд нікнейм є обов'язковим")
-    .min(2, "Діскорд нікнейм повинен містити принаймні 2 символи"),
+    .min(1, "Discord нікнейм є обов'язковим")
+    .min(2, "Discord нікнейм повинен містити принаймні 2 символи"),
 
   fullName: z
     .string()
@@ -24,10 +27,9 @@ export const registrationSchema = z.object({
       "Ім'я та прізвище можуть містити лише літери та пробіли"
     ),
 
-  email: z
-    .string()
-    .min(1, "Пошта є обов'язковою")
-    .email("Введіть коректну адресу електронної пошти"),
+  email: z.email({
+    message: "Будь ласка, введіть коректну електронну адресу",
+  }),
 });
 
 export type RegistrationFormData = z.infer<typeof registrationSchema>;
